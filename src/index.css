@@ -1,13 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h4 {
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input {
+  border: 2px solid #f0f0f0;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  width: auto;
+}
+
+.container {
+  margin: 20px auto;
+  width: 320px;
+}
+
+.input-container {
+  margin-bottom: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  outline: none;
+}
+.card-view {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.jc-space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.income-expense-view {
+  margin: 20px 0;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.income-text-value {
+  margin: 5px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.income-expense-view > div {
+  flex: 1;
+  text-align: center;
+}
+
+.income-expense-view > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.red-border {
+  border-left: 5px solid #c0392b;
+}
+.green-border {
+  border-left: 5px solid #2ecc71;
+}
+.fc-income {
+  color:#2ecc71;
+}
+.fc-expense {
+  color:#c0392b;
 }
