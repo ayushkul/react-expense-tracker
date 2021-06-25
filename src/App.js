@@ -1,39 +1,36 @@
-import React, { useState } from "react";
-import { ListIemComponent } from "./components/ListItemComponent";
-import { BalanceComponent } from "./components/BalanceComponent";
-import { IncomeExpenseComponent } from "./components/IncomeExpenseComponent";
+import React from "react";
+import styled from "styled-components";
+import HomeComponent from "./modules/home";
 
-function App() {
-  const [income, updateIncome] = useState(0.0);
-  const [expense, updateExpense] = useState(0.0);
-  const [history, updateHistory] = useState([]);
+const Container = styled.div`
+  background-color: white;
+  color: #0d1d2c;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  align-items: center;
+  height: 100vh;
+  width: 98%;
+  font-family: Montserrat;
+`;
 
-  const addTransaction = (transactionObj) => {
-    let historyList = [...history];
-    historyList.push(transactionObj);
-    updateHistory(historyList);
-    if (transactionObj.amount > 0)
-      updateIncome((income) => income + Number(transactionObj.amount));
-    else updateExpense((expense) => expense + Number(transactionObj.amount));
-  };
+const Header = styled.div`
+  background-color: white;
+  color: #0d1d2c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 22px;
+  font-size: 25px;
+  font-weight: bold;
+`;
+const App = () => {
   return (
-    <>
-      <h2>Expense Tracker</h2>
-      <div className="container">
-        <BalanceComponent
-          balance={income + expense}
-          addTransaction={addTransaction}
-        />
-        <IncomeExpenseComponent income={income} expense={expense} />
-        <h3>History</h3>
-        {history?.length
-          ? history.map((historyObj) => (
-              <ListIemComponent transaction={historyObj} />
-            ))
-          : null}
-      </div>
-    </>
+    <Container>
+      <Header>Expense Tracker</Header>
+      <HomeComponent />
+    </Container>
   );
-}
+};
 
 export default App;

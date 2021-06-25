@@ -1,20 +1,22 @@
-## React Expense Tracker using React Hooks & Material UI- ReactJS projects
+# React Expense Tracker - ReactJS Projects
 
-![](demo.gif)
-
-### Application Demo -
-
+### Demo - Deployed over Github Pages 
 https://ayushkul.github.io/react-expense-tracker
 
-### Video Tutorial -
+### Full development Tutorial 
+[Youtube Tutorial - The Indian Dev](https://www.youtube.com/watch?v=_UXycMmVYj0)
 
-https://www.youtube.com/channel/UCbaR6YYn5VGXrR5_f-4tNsA
+### Libraries used
+* `styled-components`
+* `react-scripts`
 
-### Development steps-
-1. Create React App using npx create-react-app
-2. Designing the UI i.e. Game board using JSX and CSS.
-3. Used React Hooks to manage the state of the application.
-4. Worked with conditional rendering and list iterations.
+### Whom do I talk to? ###
 
+* AyushK : [The Indian Dev](https://www.instagram.com/theindiandev)
 
+### How can I appreciate this repo? ###
+
+* By giving this repo a 🌟
+* By Subscribing : [The Indian Dev](https://www.youtube.com/channel/UCbaR6YYn5VGXrR5_f-4tNsA) at Youtube
+* By Following : [The Indian Dev](https://www.instagram.com/theindiandev) at Instagram
 
