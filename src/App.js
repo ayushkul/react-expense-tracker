@@ -11,6 +11,7 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   width: 98%;
+  padding-top: 30px ;
   font-family: Montserrat;
 `;
 
